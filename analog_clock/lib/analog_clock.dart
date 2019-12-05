@@ -132,10 +132,13 @@ class _AnalogClockState extends State<AnalogClock> {
         value: time,
       ),
       child: Container(
-        color: customTheme.backgroundColor,
+        // color: customTheme.backgroundColor,
         child: Stack(
           children: [
             // Example of a hand drawn with [CustomPainter].
+            Container(
+              child: Image.asset("assets/sunny.jpg"),
+            ),
             DrawnHand(
               color: customTheme.accentColor,
               thickness: 4,
